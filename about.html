@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/style/style.css">
     <title>May's Creations</title>
@@ -10,36 +13,66 @@
 <!-- Main -->
 <main>
 <body>
-    <nav class="navbar">
-        <img src="./assets/images/logo.jpeg" alt="logo" width="70px" height="70px" />
-        <a class="active" href="./index.html"><i class="fa fa-home"></i> Home</a>
-        <a href="./about.html"><i class="fa fa-user"></i> About</a>
-        <a href="./recipe.html"><i class="fa fa-book"></i> Recipe</a>
-        <a href="./contact.html"><i class="fa fa-address-book-o"></i> Contact</a>
-        <div class="search-container">
-        <input type="search" id="search-bar" name="search-bar" placeholder="Search..">
-        <i class="fa fa-search"></i>
-        </div>
-    </nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Logo -->
+    <img src="./assets/images/logo.jpeg" alt="logo" width="70px" height="70px" class="navbar-brand" />
+
+    <!-- Toggler Button (Hamburger Menu) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links (Collapsible on smaller screens) -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0"> <!-- ms-auto aligns items to the left -->
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html"><i class="fa fa-home"></i> Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./about.html"><i class="fa fa-user"></i> About <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./recipe.html"><i class="fa fa-book"></i> Recipe</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html"><i class="fa fa-address-book-o"></i> Contact</a>
+        </li>
+      </ul>
+      <!-- Search Bar (Optional) -->
+      <div class="d-flex">
+        <input type="search" id="search-bar" name="search-bar" class="form-control me-2" placeholder="Search..">
+      </div>
+    </div>
+  </nav>
+
     <!-- About Section -->
     <section id="about-section">
-        <div class="about-model">
-           <p>“Homemade Asian food is not just about the ingredients; it's about passing down love, tradition, and stories, one dish at a time.”</p>   
+        <div class="about-model p-4 mb-4 border rounded shadow-sm">
+            <p class="fs-4 text-center">“Homemade Asian food is not just about the ingredients; it's about passing down love, tradition, and stories, one dish at a time.”</p>
+        </div>
+        
     </section>
-    <div class="about-intro">
-        <img src="./assets/images/May2.jpeg" alt="portrait2" class="portrait2-img">
-        <p class="about-intro-text">
-
-            "Hi there! I'm May!, a passionate home cook who believes that food is not just fuel but a way to connect with people, culture, and memories. 
-            <br><br>
-            My love for cooking started from watching my mum, a trip abroad, experimenting in the kitchen and through youtube channel and has grown into a lifelong adventure in the kitchen. 
-            <br><br>
-            Whether I'm crafting traditional Asian dishes passed down through generations or experimenting with new flavors, cooking is my way of expressing creativity and sharing joy. 
-            <br><vr></vr>
-            I love exploring the endless variety of cuisines, and I'm always excited to try new recipes and techniques, especially when they bring a bit of comfort and warmth to the table. 
-            When I'm not cooking, you'll find me researching new culinary trends or spending time with loved ones over a hearty meal. 
-        </p>
-    </div>
+    <div class="about-intro d-flex flex-column flex-md-row align-items-center p-4">
+        <!-- Image Section -->
+        <div class="portrait2-container mb-5 mb-md-0">
+            <img src="./assets/images/May2.jpeg" alt="portrait2" class="portrait2-img img-fluid rounded">
+        </div>
+    
+        <!-- Text Section -->
+        <div class="container mb3">
+            <p class="d-flex flex-column flex-md-row align-items-center p-4">
+                "Hi there! I'm May! A passionate home cook who believes that food is not just fuel but a way to connect with people, culture, and memories. 
+                <br><br>
+                My love for cooking started from watching my mum, a trip abroad, experimenting in the kitchen and through youtube channel and has grown into a lifelong adventure in the kitchen. 
+                <br><br>
+                Whether I'm crafting traditional Asian dishes passed down through generations or experimenting with new flavors, cooking is my way of expressing creativity and sharing joy. 
+                <br><br>
+                I love exploring the endless variety of cuisines, and I'm always excited to try new recipes and techniques, especially when they bring a bit of comfort and warmth to the table. 
+                <br><br>
+                When I'm not cooking, you'll find me researching new culinary trends or spending time with loved ones over a hearty meal."
+          </p>
+    </div>  
     <!-- Footer -->
     <footer>
         <span>&copy 2025 PiggyEats. All rights reserved</span>

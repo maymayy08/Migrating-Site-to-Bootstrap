@@ -10,7 +10,7 @@
     --primary-text-align: center;
     --secondary-position: relative;
     --primary-font-style: italic;
-    --primary-display: flex;
+    --primary-display: grid;
     --primary-align-items: center; 
     --background-color: whitesmoke;
     --text-color: black;
@@ -77,6 +77,7 @@ input, label {
 
 h1 {
   transition: transform 0.3 ease;
+  font-size: 25px;
 }
 
 h1:hover {
@@ -108,7 +109,7 @@ h1::first-letter {
 }
 
 .hero-box-model {
-  display: grid;
+  display: var(--primary-display);
   width: 70%;
   padding: 30px;
   border: 2px solid #000;
@@ -132,25 +133,18 @@ h1::first-letter {
 
 .hero-box-model-img {  
   display: var(--primary-display);     
-  align-items: flex-start;   
+  grid-template-columns: repeat(3, 1fr);  
+  gap: 15px;
   justify-content: space-evenly;  
   padding: 20px 0;  
-  align-items: var(--primary-align-items);  
 }  
 
  .box-img {  
   height: 180px;  
-  width: 225px;  
-  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr)); 
-  align-items: var(--primary-align-items); 
+  width: 220px;  
   border-style: groove; 
-  border: black solid 3px; 
-  transition: 
-  width 2s,
-  height 2s,
-  background-color 2s,
-  rotate 2s;
-
+  border: 3px solid black; 
+  transition: width 2s, height 2s, background-color 2s, rotate 2s;
  }   
 
 .button {
@@ -160,20 +154,25 @@ h1::first-letter {
   padding: 5px 10px;
   text-decoration: none;
   font-weight: bold;
+  width: 40%;
+  justify-self: center;
 }
 
 .portrait-img {
+  position: var(--secondary-position);
   width: 200px; 
-  height: 300px; 
+  height: 280px; 
   border: 5px solid #000;
-  margin-left: 50px; 
+  text-align: center;
+  margin-left: 50px;  
+  top: 5px;
 }
 
 .about-summary {
   display: var(--primary-display);
   position: var(--secondary-position);
   width: 50%;
-  height: 100%;
+  height: auto;
   padding: 0px;
   border: 2px solid black;
   background-color: #fff;
@@ -208,7 +207,7 @@ h1::first-letter {
   width: 230px;
   height: 325px;
   left: 20px;
-  top: 30px;
+  top: 0;
   border: 2px solid black;
   border-style: double;
   transition: width 5s;
@@ -226,9 +225,9 @@ h1::first-letter {
   border: 4px solid black;
   border-style: dotted;
   width: 800px;
-  height: 225px;
-  left: 50px;
-  top: 50px;
+  height: 300px;
+  left: 280px;
+  bottom: 280px;
   padding: 10px;
   
 }
@@ -249,6 +248,8 @@ footer {
   position: var(--secondary-position);
   top: 2vw;
   left: 10%;
+  transition: 1s ease;
+
 }
 /* Contact Form */
 
@@ -269,10 +270,11 @@ footer {
   border: 2px solid black;
   padding: 20px;
   border-radius: 10px;
-  width: 50%;
+  width: 35%;
   height: 600px;
   background-color: pink;
   box-sizing: var(--primary-box-sizing);
+  transition: 1s ease;
 }
 
 .form-wrapper h2 { 
@@ -283,35 +285,42 @@ footer {
 
 .form-wrapper form {
   display: var(--primary-display);
-  flex-direction: column;
+  grid-template-columns: 1fr;
+  gap: 0; 
   align-items: var(--primary-align-items);
 }
 
+.form-banner:hover{
+  transform: scale(0.8);
+  transition: 1s ease;
+}
+
+
 label {
-  text-align: var(--primary-text-align);
   font-family: monospace;
 }
 
 input[type=text] {
   width: 100%;
-  max-width: 350px;
+  max-width: 490px;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: var(--primary-box-sizing);
   margin-top: 6px;
   margin-bottom: 16px;
+  font-size: 12px;
   font-family: monospace;
 }
 
 textarea {
   position: var(--secondary-position);
   width: 100%;
-  max-width: 350px;
+  max-width: 490px;
+  margin-left: 25px;
   height: 150px;
   font-size: 12px;
   font-family: monospace;
-  margin-bottom: 16px;
 }
 
 textarea::placeholder {
@@ -330,9 +339,11 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  width: 100%;
+  width: 50%;
   max-width: 350px;
   font-weight: bold;
+  margin-left: 120px;
+  font-size: 12px;
 }
 input[type=submit]:hover {
   background-color: green;
@@ -354,9 +365,7 @@ h3 {
 
 .cards-wrapper {
   display: var(--primary-display); 
-  flex-wrap: wrap;                  
-  gap: 20px;                          
-  padding: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));  
 }
 
 .card {
@@ -364,39 +373,53 @@ h3 {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: var(--primary-display);
-  flex-direction: column;
+  margin-left: 30px;
+  margin-bottom: 20px;
   align-items: var(--primary-align-items);
-  justify-content: space-between;
-  width: 500px;    
-  flex-basis: 250px;                    
+  justify-content: space-between; 
+  width: 290px;    
+  grid-template-columns: 250px;                 
   max-width: 500px;                              
   height: auto;
-  bottom: 5px;
   border: 2px solid black;
-  padding: 22px; 
+  padding: 30px; 
   box-shadow: 0 5px 0px;
   
 }
-
+.card-title {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: bold;
+}
 .card-description {
   font-family: monospace;
   font-size: 12px;
+  margin: 0; 
+  line-height: 1.5;
 }
 
 .card-image{
   border: 8px solid black;
   border-style: double;
+  justify-items: center;
+  width: 225px;
 }
 
 #card-btn {
-  width: 200px;
+  width: 220px;
   font-size: 15px;
   border: 2px solid black;
   font-weight: bold;
 }
+
+.serving {
+  font-family: monospace;
+  font-size: 13px;
+}
+
 .star-rating {
   display: var(--primary-display);
-  gap: 5px;
+  grid-template-columns: repeat(6, 1fr); 
 }
 
 .star-rating .fa-star {
@@ -409,75 +432,86 @@ h3 {
 
 @media screen and (prefers-color-scheme: dark) {
   body {
-    background-color: whitesmoke;
+    background-color: white;
     color: black;
   }
 }
 
   @media screen and (max-width: 780px) {
+   
     .navbar a {
       float: none;
       display: block;
     }
 
+   .hero-box-model {
+    width: 450px;
+    padding: 20px;
+   }
+  
     .hero-box-model-img {  
-      flex-direction: column; 
+      grid-template-columns: repeat(5, 1fr);
       gap: 10px; 
     } 
 
     .box-img {  
-    width: 120px; 
+    width: 115px; 
     height: 100px; 
+    margin-left: 20px;
+    }
+
+    .button {
+      width: 200px;
+      justify-self: center;
     }
 
     .hero-box-model p { 
-    justify-content: center; 
+    justify-content: var(--primary-justify-content); 
     display: var(--secondary-display); 
     color: #000;
     
   } 
 
-  h1 {
-  text-align: center;
-  top: 180px;
-  }
+    h1 {
+    text-align: center;
+    top: 180px;
+    }
 
-  .portrait-img {
+    .portrait-img {
     margin-left: 10px;
-  }
+    }
 
     .about-summary { 
       width: 330px;
-      height: 220px; 
+      height: 240px; 
       padding: 5px;
       bottom: 260px;
       left: 225px;
+      }
+
+      .summary-text  {
+       margin: 0;
+       font-size: 12px;
+       height: 30px;
     }
 
-    .summary-text  {
-      margin: 0;
-      font-size: 12px;
-      height: 30px;
-    }
+      .portrait2-img { 
+        position: var(--secondary-position);
+        top: 0px;
+        left: 20px;
+        width: 220px;
+        height: 300px;
+      } 
 
-    .portrait2-img { 
-      position: var(--secondary-position);
-      top: 110px;
-      left: 20px;
-      width: 200px;
-      height: 200px;
-      
-    } 
-    .about-intro {
-      position: var(--secondary-position);
-      width: 485px;
-      font-size: 11px;
-      bottom: 50px;
-    }
-
-    .about-intro-text {
-      padding: 20px;
-    }
+      .about-intro-text {
+        position: var(--secondary-position);
+        width: 255px;
+        height: 480px;
+        padding-bottom: 60px;
+        font-size: 12px; 
+        left: 270px;
+        bottom: 290px;
+      }
 
     .cards-wrapper {
       justify-content: var(--primary-justify-content);
@@ -500,19 +534,42 @@ h3 {
       position: var(--secondary-position);
       bottom: 350px;
       width: 40%;
+      height: 625px;
       left: 150px;
       margin: 0 auto;
       transition: 1s ease;
   }
 
-  .search-container i {
-    bottom: 35px;
-    left: 195px;
+  input[type=text] {
+    position: var(--secondary-position);
+    width: 200px;
+    right: 40px;
   }
 
-  @media (min-width: 1024px) {
-    .card {
-        border-width: 2px;  
-    }
+  textarea{ 
+    position: var(--secondary-position);
+    width: 195px;
+    right: 35px;
   }
+
+  input[type=submit] {
+    margin-left: 20px;
+
+  }
+
+  label {
+    margin-left: 5px;
+  }
+  
+  .cards-wrapper {
+    justify-items: center;
+  }
+
+
+  .search-container i {
+    bottom: 10x;
+    right: 30px;
+  }
+
 }
+
