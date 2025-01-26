@@ -48,11 +48,19 @@
 
 <!-- Banner Hero -->
 <section id="hero-section">
-    <div class="hero-banner">
-          <h1>Welcome to PiggyEats &#128055&#129378</h1>         
-    </div>
+<header class="bg-info text-dark text-center p-3">
+    <h1>Welcome to PiggyEats &#128055;&#129378;</h1> 
+    <button onclick="myFunction()"> Toggle to dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>   
+</header>
 <!-- Recipe Synopsis -->
-    <div class="container mt-2" style="border: 2px solid black">
+    <div class="bg-light container mt-2" style="border: 2px solid black">
         <p class="text-center">Miso Spaghetti | Katsu Pork Curry | Bang-Bang Chicken</p>
         <br>
         <div class="text-center"> 
@@ -61,7 +69,7 @@
             <img src="./assets/images/bang-bang-chicken.jpeg" slt="bang-bang-chicken" class="box-img">
         </div>
         <div class="text-center">
-         <a href="./recipe.html" class="btn btn-primary mt-3">Explore our receipe here</a>
+         <a href="./recipe.html" class="bg-info btn btn-primary mt-3">Explore our receipe here</a>
         </div>
     </div>
 </section>
@@ -74,7 +82,7 @@
             <br><br>
             Throughout her time making them, she has specialist different culture of asian food such as korean, vietnamese, chinese, thai.
             <br><br>
-        <strong>To read more <a href="./about.html">click here.</a></strong></p>
+        <strong>To read more <a href="./about.html">click here!.</a></strong></p>
     </div>
     </div>
     <!-- Footer -->

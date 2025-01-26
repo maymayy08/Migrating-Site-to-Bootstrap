@@ -440,11 +440,9 @@ h3 {
   border: 2px solid black;
 }
 
-@media screen and (prefers-color-scheme: dark) {
-  body {
-    background-color: white;
-    color: black;
-  }
+.dark-mode {
+  background-color: black;
+   color: black;
 }
 
   @media screen and (max-width: 780px) {
