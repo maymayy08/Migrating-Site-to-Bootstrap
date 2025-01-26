@@ -16,16 +16,20 @@
 <main>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <!-- Logo -->
+  
+  <!-- Logo -->
+     <a href="./index.html">
     <img src="./assets/images/logo.jpeg" alt="logo" width="70px" height="70px" class="navbar-brand" />
+     </a>
 
     <!-- Toggler Button (Hamburger Menu) -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <!-- Navbar Links (Collapsible on smaller screens) -->
     <div class="collapse navbar-collapse" id="navbarNav">
+
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0"> 
         <li class="nav-item active">
           <a class="nav-link" href="./index.html"><i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
@@ -43,7 +47,7 @@
 
       <!-- Search Bar -->
       <div class="d-flex">
-        <input type="search" id="search-bar" name="search-bar" class="form-control me-2" placeholder="Search..">
+        <input type="search" id="search-bar" name="search-bar" class="form-control ml-1" placeholder="Search..">
       </div>
     </div>
   </nav>
@@ -52,9 +56,7 @@
 <section id="hero-section">
 <header class="bg-info text-dark text-center p-3">
     <h1>Welcome to PiggyEats &#128055;&#129378;</h1> 
-    <!-- Dark Mode Toggle -->
-    <button onclick="myFunction()"> Toggle to dark mode</button>
-
+</header>
 <script>
 function myFunction() {
    var element = document.body;
@@ -81,21 +83,30 @@ function myFunction() {
     <div class="text-center mb-2">
         <img src="./assets/images/May.png" alt="portrait" class="portrait-img">
     </div>
-    <div class="container mb-3">
-        <p class="fs-6">The story began... A young asian girl who is passionate in cooking her homemade food for her close fqmilies and friends, especially her husband well knowns as 'PiggyEats' - describe being the guiness pig and born year of pig. 
-            <br><br>
-            Throughout her time making them, she has specialist different culture of asian food such as korean, vietnamese, chinese, thai.
-            <br><br>
+    <div class="container mb-4">
+        <p class="index-text mb-3">The story began... A young Asian girl who is passionate about cooking her homemade food for her close families and friends, especially her husband, well known as 'PiggyEats' – described as being the guinea pig and born in the Year of the Pig.
+          <br><br> Throughout her time making them, she has specialized in different cultures of Asian food, such as Korean, Vietnamese, Chinese, and Thai.
+            <br>
         <strong>To read more <a href="./about.html">click here</a></strong></p>
     </div>
     </div>
     
     <!-- Footer -->
 <footer>
-    <span>&copy 2025 PiggyEats. All rights reserved</span>
-    <span>Follow Us<a href="https://www.instagram.com/piggyt_eats/?igsh=azZkNm1ma2ttbHly">
-      <img src="./assets/images/instagram.jpg" alt="insta-logo" class="ml-2"  width="35px" height="40px"></a>
-      <a href="./contact.html" class="bg-dark btn btn-primary mt-1 ml-2">Get in Touch</a>
+    <span class="footer-text">&copy 2025 PiggyEats. All rights reserved
+    <a href="https://www.instagram.com/piggyt_eats/?igsh=azZkNm1ma2ttbHly">
+      <img src="./assets/images/instagram.jpg" alt="insta-logo" class="ml-3"  width="35px" height="40px"></a>
+      <a href="./contact.html" class="bg-dark btn btn-primary mt-1 ml-3">Get in Touch</a>
+      
+      <!-- Dark Mode Toggle -->
+    <button onclick="myFunction()" class="togglebtn ml-3"> Toggle to dark mode</button>
+    
+    <script>
+      function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+      </script>   
     </span>
 </footer>
 </main>

@@ -20,11 +20,14 @@
 <body>
    <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
     <!-- Logo -->
-    <img src="./assets/images/logo.jpeg" alt="logo" width="70px" height="70px" class="navbar-brand" />
+    <a href="./index.html">
+      <img src="./assets/images/logo.jpeg" alt="logo" width="70px" height="70px" class="navbar-brand" />
+       </a>
 
     <!-- Toggler Button (Hamburger Menu) -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -108,10 +111,20 @@
 <!-- Footer -->
 
 <footer>
-  <span>&copy 2025 PiggyEats. All rights reserved</span>
-  <span>Follow Us<a href="https://www.instagram.com/piggyt_eats/?igsh=azZkNm1ma2ttbHly">
-    <img src="./assets/images/instagram.jpg" alt="insta-logo" class="ml-2"  width="35px" height="40px"></a>
-    <a href="./contact.html" class="bg-dark btn btn-primary mt-1 ml-2">Get in Touch</a>
+  <span class="footer-text">&copy 2025 PiggyEats. All rights reserved
+  <a href="https://www.instagram.com/piggyt_eats/?igsh=azZkNm1ma2ttbHly">
+    <img src="./assets/images/instagram.jpg" alt="insta-logo" class="ml-3"  width="35px" height="40px"></a>
+    <a href="./contact.html" class="bg-dark btn btn-primary mt-1 ml-3">Get in Touch</a>
+    
+    <!-- Dark Mode Toggle -->
+  <button onclick="myFunction()" class="togglebtn ml-3"> Toggle to dark mode</button>
+  
+  <script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>   
   </span>
 </footer>
 </main>

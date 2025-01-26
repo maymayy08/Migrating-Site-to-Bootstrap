@@ -65,6 +65,8 @@ input, label {
   margin: 0.9rem 30px;
 }
 
+
+
 /* Hero Section */
 .hero-banner {
     width: var(--primary-width);
@@ -233,14 +235,17 @@ footer {
   display: var(--primary-display); 
   position: fixed;
   justify-content: var(--primary-justify-content);
-  margin-top: 270px;
+  margin-top: 50px;
   width: 100%;
   bottom: 0;
   padding: 6px;
-  font-weight: bold;
   font-size: 18px;
   background-color : dodgerblue;
   font-family: "Amatic SC", serif;
+}
+
+.footer-text {
+  font-weight: bold;
 }
 
 /* Contact Section */
@@ -448,9 +453,9 @@ h3 {
   border: 2px solid black;
 }
 
-.dark-mode {
+body.dark-mode {
   background-color: black;
-   color: black;
+  color: black;
 }
 
 .form-label {
@@ -461,6 +466,7 @@ h3 {
 .fs-4.text-center { 
   font-family: "Italianno", serif;
 } 
+
 
 
   @media screen and (max-width: 780px) {
