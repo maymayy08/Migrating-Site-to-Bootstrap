@@ -235,13 +235,22 @@ footer {
   display: var(--primary-display); 
   position: fixed;
   justify-content: var(--primary-justify-content);
-  margin-top: 50px;
+  margin-top: 20px;
   width: 100%;
   bottom: 0;
   padding: 6px;
   font-size: 18px;
   background-color : dodgerblue;
   font-family: "Amatic SC", serif;
+}
+
+.togglebtn { 
+  position: var(--secondary-position);
+  width: 100px;
+  height: 20px;
+  left: 20px;
+  font-size: 10px;
+  font-weight: bold;
 }
 
 .footer-text {
@@ -619,5 +628,12 @@ body.dark-mode {
       padding: 5px;
       border: 3px solid black;
     }
-}
+
+    .index-text.mb-3 {
+      position: var(--secondary-position);
+      bottom: 20px;
+    }
+  
+  }
+
 
