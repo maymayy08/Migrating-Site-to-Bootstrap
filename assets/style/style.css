@@ -244,15 +244,6 @@ footer {
   font-family: "Amatic SC", serif;
 }
 
-.togglebtn { 
-  position: var(--secondary-position);
-  width: 100px;
-  height: 20px;
-  left: 20px;
-  font-size: 10px;
-  font-weight: bold;
-}
-
 .footer-text {
   font-weight: bold;
 }
