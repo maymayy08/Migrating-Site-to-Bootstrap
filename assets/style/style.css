@@ -75,11 +75,6 @@ input, label {
     padding: 8px;   
 }
 
-h1 {
-  transition: transform 0.3 ease;
-  font-size: 25px;
-}
-
 h1:hover {
   transform: scale(1.4);
 }
@@ -168,6 +163,7 @@ h1::first-letter {
   top: 5px;
 }
 
+/* About Section */
 .about-summary {
   display: var(--primary-display);
   position: var(--secondary-position);
@@ -231,6 +227,7 @@ h1::first-letter {
   padding: 10px;
   
 }
+/* Footer */
 
 footer { 
   display: var(--primary-display); 
@@ -241,9 +238,12 @@ footer {
   bottom: 0;
   padding: 6px;
   font-weight: bold;
+  font-size: 18px;
   background-color : dodgerblue;
+  font-family: "Amatic SC", serif;
 }
 
+/* Contact Section */
 .form-banner {
   position: var(--secondary-position);
   top: 2vw;
@@ -360,10 +360,18 @@ input[type=submit]:hover {
 
 h1 {
   text-align: var(--primary-text-align);
+  font-family: "Caveat", serif;
+  transition: transform 0.3 ease;
+  font-size: 25px;
 }
 
 h3 {
   font-family: cursive;
+}
+
+.text-center {
+  font-family: "Caveat", serif;
+  font-size: 22px;
 }
 
 .cards-wrapper {
@@ -444,6 +452,16 @@ h3 {
   background-color: black;
    color: black;
 }
+
+.form-label {
+  font-size: 12px;
+  line-height: 0.2; 
+}
+
+.fs-4.text-center { 
+  font-family: "Italianno", serif;
+} 
+
 
   @media screen and (max-width: 780px) {
    
@@ -539,7 +557,7 @@ h3 {
       bottom: 40px; 
       width: 500px;
       max-width: 500px;
-      max-height: 530px;
+      max-height: 550px;
       left: 0;
       margin: 0 auto; 
   }
