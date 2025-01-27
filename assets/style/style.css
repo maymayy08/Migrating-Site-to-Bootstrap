@@ -137,7 +137,7 @@ h1::first-letter {
 
 /* Footer */
 .footer-container {
-  display: var(--primary-display); 
+/*   display: var(--primary-display);  */
   position: fixed;
   justify-content: var(--primary-justify-content); 
 /*    margin-top: 20px;  */
