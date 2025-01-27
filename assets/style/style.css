@@ -136,14 +136,14 @@ h1::first-letter {
 }
 
 /* Footer */
-footer {
+.footer-container {
   display: var(--primary-display);
-  position: fixed;
+  position: sticky;
   justify-content: var(--primary-justify-content);
   margin-top: 20px;
   width: 100%;
-  bottom: 0;
-  padding: 6px;
+/*   bottom: 0; */
+  padding: 0;
   font-size: 18px;
   background-color: dodgerblue;
   font-family: "Amatic SC", serif;
