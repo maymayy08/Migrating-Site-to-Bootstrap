@@ -9,7 +9,7 @@ For my project, I have decided to take this website I created in my other repo a
 **Table of Contents**
 Home - Brief Summery how PiggyEats first started 
 About - Intro 
-Receipe - List of receipe cards
+Recipe - List of recipe cards
 Contact - A interactive contact form 
 
 
