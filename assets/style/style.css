@@ -119,6 +119,13 @@ h1::first-letter {
   transition: width 5s;
 }
 
+.about-text {
+  position: var(--secondary-position);
+  left: 265px;
+  bottom: 330px;
+
+}
+
 .about-intro {
   display: var(--primary-display);
 }
@@ -160,20 +167,20 @@ h1::first-letter {
 .form-img {
   width: 100%;
   max-width: 450px;
-  height: auto;
-  border: 2px solid black;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
-  margin-top: 30px;
+  height: 620px;
+  border: 2px solid black; 
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .form-wrapper {
   position: var(--secondary-position);
-  left: 550px;
-  bottom: 610px;
+  left: 500px;
+  bottom: 625px;
+  max-height: 625px;
   border: 2px solid black;
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
   background-color: pink;
   box-sizing: var(--primary-box-sizing);
   transition: 1s ease;
@@ -182,7 +189,7 @@ h1::first-letter {
 .form-wrapper h2 {
   text-align: var(--primary-text-align);
   font-family: cursive;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid black; 
 }
 
 .form-wrapper form {
@@ -247,7 +254,7 @@ input[type="submit"]:hover {
   line-height: 0.2;
 }
 
-.fs-4.text-center {
+.text-center {
   font-family: "Italianno", serif;
 }
 
@@ -327,10 +334,8 @@ h3 {
 }
 
 .img-fluid {
-  position: var(--secondary-position);
   max-width: 480px;
   top: 20px;
-  border: 2px solid black;
 }
 
 .form-label {
@@ -377,6 +382,11 @@ h3 {
     height: 300px;
   }
 
+  .about-text {
+    bottom: 50px;
+    left: 10px;
+  }
+
   .about-intro-text {
     position: var(--secondary-position);
     width: 255px;
@@ -394,16 +404,16 @@ h3 {
   .form-img {
     width: 200px;
     height: 120px;
-    margin-top: 10px;
+    margin-top: 200px;
     margin-left: 110px;
   }
 
   .form-wrapper {
     position: var(--secondary-position);
-    bottom: 40px;
+    bottom: 170px;
     width: 500px;
     max-width: 500px;
-    max-height: 550px;
+    max-height: 545px;
     left: 0;
     margin: 0 auto;
   }
@@ -450,13 +460,16 @@ h3 {
     margin-left: 40px;
   }
 
+  .form-img {
+    position: var(--secondary-position); 
+    width: 220px;
+    height: 250px; 
+    margin-left: 180px; 
+    bottom: 180px;
+  }
+
   .img-fluid {
-    width: 200px;
     height: 200px;
-    margin-left: 180px;
-    margin-bottom: 10px;
-    padding: 5px;
-    border: 3px solid black;
   }
 
   .index-text.mb-3 {
