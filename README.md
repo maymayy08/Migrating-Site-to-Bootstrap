@@ -1,17 +1,40 @@
-<div align= "center"> 
 
-  **PiggyEats**
 
-**Description:**
-The main goal of this project to make the website user-friendly and responsive using Bootstrap and Js Widget.
-For my project, I have decided to take this website I created in my other repo and enhance this in a better way and more user-friendly.
+📌 PiggyEats
 
-**Table of Contents**
-Home - Brief Summery how PiggyEats first started 
-About - Intro 
-Recipe - List of recipe cards
-Contact - A interactive contact form 
+A dymanic and interactive multiple page website using HTML, CSS, bootstrap and Jquery Widgets. This project is to ensure the website is user-friendly with dymanic features. 
+The website is based on the owner's creation of her home made food she cook and Instagram was the first step where it all started when she posted foodie photos of her creations. 
 
+
+🚀 Features
+
+Jquery widget on contact form
+Features animation on contact page and home page such as navbar, logo and images 
+smooth and kawaii look design 
+List of receipt cards with feature photos including descriptions 
+
+🛠️ Technologies Used
+
+HTML: Structure of the list
+CSS: Styling and layout
+JQuery: Interactive functionalities
+📂 Project Structure
+
+📦 Interactive-ToDo-List-App
+
+│── index.html # Main HTML file
+│── style.css # Styling for the UI
+│── about.html # About owner 
+|── recipe.html # recipe cards featuring photos 
+│── contact.html # Dymanic contact form 
+│── README.md # Project documentation
+
+
+🎬 Live Demo
+
+Check out the live demo for this project:
+
+[🔗Demo Link](https://github.com/meghanasrividya/To_Do_List_App)
 
 
 
