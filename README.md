@@ -23,10 +23,15 @@ JQuery: Interactive functionalities
 📦 Interactive-ToDo-List-App
 
 │── index.html # Main HTML file
+<br>
 │── style.css # Styling for the UI
+<br>
 │── about.html # About owner 
+<br>
 |── recipe.html # recipe cards featuring photos 
+<br>
 │── contact.html # Dymanic contact form 
+<br>
 │── README.md # Project documentation
 
 
